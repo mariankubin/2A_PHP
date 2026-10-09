@@ -8,9 +8,8 @@
 <body>
   <p>pato</p>
   <?php
-  echo "juraj";
-  print("Štefan");
-  
+  // Vytvorenie premmenej a definovanie hodnoty
+  $premenna = "text";
   ?>
 </body>
 </html>
