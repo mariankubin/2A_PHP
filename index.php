@@ -67,7 +67,20 @@
     Nadstavba 
     Každé piate číslo bude mať náhodnú veľkosť (od 10 do 50) a fatbu
     */
-  
+  $nahodneCislo = rand(0,1000);
+  $nahodnaVelkost = rand(10,50);
+  $counter = 0;
+
+  if($nahodneCislo % 2 == 0){
+    for($i = 0; $i <= $nahodneCislo; $i+=2){
+      if($counter % 5 == 0 ){
+        echo"<span style='font-size: 40px;'>$i</span."." ,
+      }else{
+        echo $i .",";
+      }
+      $counter++;
+    }
+  }
   ?>
 
   <!--
