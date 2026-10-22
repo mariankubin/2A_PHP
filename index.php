@@ -51,7 +51,7 @@
   ak číslo bude nepárne, tak vypísať všetky nepárne čislo od 0 po náhodné čislo
   
   */
-  echo "</br"
+  echo "</br>";
   $nahodnecislo = random_int(0,1000);
     if($nahodnecislo % 2 == 0){
       for($i = 0; $i <= $nahodnecislo; $i += 2) {
@@ -67,7 +67,6 @@
     Nadstavba 
     Každé piate číslo bude mať náhodnú veľkosť (od 10 do 50) a fatbu
     */
-    
   
   ?>
 
