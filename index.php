@@ -69,19 +69,32 @@
     */
   $nahodneCislo = rand(0,1000);
   $nahodnaVelkost = rand(10,50);
-  $counter = 0;
+  $counter = 1;
 
   if($nahodneCislo % 2 == 0){
     for($i = 0; $i <= $nahodneCislo; $i+=2){
+      $nahodnaVelkost = rand(10,50);
       if($counter % 5 == 0 ){
-        echo"<span style='font-size: 40px;'>$i</span."." ,
+        echo "<span style='font-size: 40px;'>$i</span>, ";
       }else{
         echo $i .",";
       }
       $counter++;
     }
+  }else{
+    for($i = 1; $i <= $nahodneCislo: $i+=2){
+      if($counter % 5 == 0){
+        echo "<span style='font-size: {$nahodnaVelkost}px;'>$i</span>,";
+      } else {
+        echo $i .",";
+      }
+      $counter++;
+    }
   }
+  
   ?>
+
+  <p style="color: rgb(40, 20, 200)">peter</p>
 
   <!--
   Komentár v HTML
